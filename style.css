@@ -4,7 +4,7 @@
 }
 
 body{
-    background-color:rgb(56, 56, 56);
+    background:linear-gradient(to right,rgb(36, 34, 34),gray,rgb(36, 34, 34));
 }
 
 .calculator{
