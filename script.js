@@ -1,7 +1,7 @@
 const screen_div = document.querySelector(".screen > p"); //Accesing the calculator screen
-var x = [];
-var number = 0;
-var ctr=0;
+var x = [];      // The data entered by the user will be stored here
+var number = 0; // With his help the number will be formed
+var ctr=0;     //With the help of it will be able to continue the operations after equal
 
 //Formation number and add on the calculator screen
 function formareNumar(nr) {
