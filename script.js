@@ -23,9 +23,8 @@ function plus(){
         x.pop();//Clean the last sign
         x.push('+');
          }
-       console.log('plus= ',x); 
-   document.getElementById("plus").classList.add("gray-glow");
-  setTimeout(function(){document.getElementById("plus").classList.remove("gray-glow")},300);    
+     document.getElementById("plus").classList.add("gray-glow");
+     setTimeout(function(){document.getElementById("plus").classList.remove("gray-glow")},300);    
 }
 
 //Minus
@@ -39,9 +38,8 @@ function minus(){
         x.pop();//Clean the last sign
         x.push('-');
          }
-       console.log('minus= ',x)
-    document.getElementById("minus").classList.add("gray-glow");
-    setTimeout(function(){document.getElementById("minus").classList.remove("gray-glow")},300);    
+       document.getElementById("minus").classList.add("gray-glow");
+       setTimeout(function(){document.getElementById("minus").classList.remove("gray-glow")},300);    
 }
 
 //Multiplication
@@ -55,7 +53,7 @@ function inmultit(){
         x.pop();//Clean the last sign
         x.push('*');
          }
-         console.log('inmultit= ',x);
+        
     document.getElementById("inmultit").classList.add("gray-glow");
     setTimeout(function(){document.getElementById("inmultit").classList.remove("gray-glow")},300);   
 }
@@ -71,7 +69,7 @@ function impartit(){
         x.pop();//Clean the last sign
         x.push('/');
          }
-       console.log('impartit= ',x);
+     
  document.getElementById("impartit").classList.add("gray-glow");
  setTimeout(function(){document.getElementById("impartit").classList.remove("gray-glow")},300);           
 }
@@ -81,7 +79,7 @@ function egal() {
     ctr++; 
 document.getElementById("egal").classList.add("gray-glow");
 setTimeout(function(){document.getElementById("egal").classList.remove("gray-glow")},300);     
-console.log('egal= ',x);
+
   var a=0;
   if (ctr === 1){
     while (x.length !== 1) {
@@ -91,35 +89,35 @@ console.log('egal= ',x);
        x.shift();
        x.shift();
        x.unshift(a);
-       console.log(x);
+     
    } else if (x[1] === "-") {
        a = x[0] - x[2];
        x.shift();
        x.shift();
        x.shift();
        x.unshift(a);
-       console.log(x);
+      
    } else if (x[1] === "*") {
     a = x[0] * x[2];
     x.shift();
     x.shift();
     x.shift();
     x.unshift(a);
-    console.log(x);
+    
      }if (x[1] === "/") {
         a = x[0] / x[2];
         x.shift();
         x.shift();
         x.shift();
         x.unshift(a);
-        console.log(x); 
+       
         }
 }  
 
     screen_div.innerHTML = Math.round(x*100)/100 ;
    x[0] = Math.round(x*100)/100;
 }
-   console.log(x);
+   
 }
 
 //Operation for buttons : '+','-','*','/'
