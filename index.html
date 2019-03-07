@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="uft-8">
+        <title> Calculator</title>
+        <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="calculator">
+            <div class="screen" id="afisare" > <p>0</p> </div>
+            <div class="btn btn1" id="1" onclick="formareNumar(1)"><h1>1</h1> </div>
+            <div class="btn btn2" id="2" onclick="formareNumar(2)"><h1>2</h1> </div>
+            <div class="btn btn3" id="3" onclick="formareNumar(3)"><h1>3</h1> </div>
+            <div class="btn btn4" id="4" onclick="formareNumar(4)"><h1>4</h1> </div>
+            <div class="btn btn5" id="5" onclick="formareNumar(5)"><h1>5</h1> </div>
+            <div class="btn btn6" id="6" onclick="formareNumar(6)"><h1>6</h1> </div>
+            <div class="btn btn7" id="7" onclick="formareNumar(7)"><h1>7</h1> </div>
+            <div class="btn btn8" id="8" onclick="formareNumar(8)"><h1>8</h1> </div>
+            <div class="btn btn9" id="9" onclick="formareNumar(9)"><h1>9</h1> </div>
+            <div class="btn btn0" id="0" onclick="formareNumar(0)"><h1>0</h1> </div>
+            <div class="btn btnplus" id="plus" onclick="operatie('+')"><h1>+</h1> </div>
+            <div class="btn btnequal" id="egal" onclick="operatie('=')"><h1>=</h1> </div>
+            <div class="btn btnminus" id="minus" onclick="operatie('-')"><h1>-</h1> </div>
+            <div class="btn btninmultit" id="inmultit" onclick="operatie('*')"><h1>*</h1></div>
+            <div class="btn btnimpartit" id="impartit" onclick="operatie('/')"><h1>/</h1></div>
+            <div class="btn btnC" id="C" onclick="again()"><h1>c</h1></div>
+            <div class="btn kmtomile" id="KM" onclick="kmtomile()"><h4>KM => Miles</h4></div>
+            <div class="btn miletokm" id="miles" onclick="miletokm()"><h4>Miles => KM</h4></div>
+            <div class="btn celsiustokelvin" id="CtoK" onclick="celsiustokelvin()"><h4>Celsius => Kelvin</h4></div>
+            <div class="btn celsiustofahrenheit" id="CtoF" onclick="celsiustofahrenheit()"><h4>Celsius => Fahrenheit</h4></div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
